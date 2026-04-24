@@ -28,7 +28,7 @@ portfolio/
 ├── styles.css          # All styling (light/dark modes, responsive)
 ├── script.js           # Vanilla JavaScript functionality
 ├── README.md           # Project documentation (this file)
-└── talha_portfolio.html # Original combined file (deprecated)
+<!-- └── talha_portfolio.html # Original combined file (deprecated) -->
 ```
 
 ---
