@@ -1,0 +1,986 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <title>Md. Talha Hossain — Web Developer · Node.js · Bangladesh</title>
+    <meta
+      name="description"
+      content="Portfolio of Md. Talha Hossain — full-stack web developer from Dhaka, Bangladesh. Node.js, Express, MongoDB. Open to part-time and remote roles."
+    />
+    <meta
+      name="keywords"
+      content="Talha Hossain, web developer Bangladesh, Node.js developer Dhaka, full stack developer Bangladesh, remote developer Bangladesh, junior web developer Bangladesh, SUST developer"
+    />
+    <meta name="author" content="Md. Talha Hossain" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://talhahossain.dev/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Md. Talha Hossain — Web Developer" />
+    <meta
+      property="og:description"
+      content="Full-stack web developer from Bangladesh. Node.js, Express, MongoDB. Open to part-time & remote."
+    />
+    <meta property="og:url" content="https://talhahossain.dev/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Md. Talha Hossain — Web Developer" />
+    <meta
+      name="twitter:description"
+      content="Full-stack web developer from Dhaka, Bangladesh."
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Md. Talha Hossain",
+        "url": "https://talhahossain.dev",
+        "email": "talhahossain56@gmail.com",
+        "telephone": "+8801937827817",
+        "jobTitle": "Web Developer",
+        "description": "Full-stack web developer from Dhaka, Bangladesh. Node.js, Express, MongoDB. Open to part-time and remote roles.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Dhaka",
+          "addressCountry": "BD"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/talhahossain",
+          "https://github.com/talhahossa1n"
+        ]
+      }
+    </script>
+
+    <!-- Anti-flash: apply saved theme before first paint -->
+    <script>
+      (function () {
+        var t =
+          localStorage.getItem("theme") ||
+          (window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light");
+        if (t === "dark")
+          document.documentElement.setAttribute("data-theme", "dark");
+      })();
+    </script>
+
+    <!-- Fonts: Fraunces (display) + Plus Jakarta Sans (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ═══════════ NAV ═══════════ -->
+    <nav id="main-nav" role="navigation" aria-label="Main navigation">
+      <a href="#hero" class="nav-logo">Talha<span>.</span></a>
+
+      <!-- FIX 1: Wrap links and controls together for right alignment -->
+      <div class="nav-right">
+        <ul class="nav-links" id="nav-links" role="list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact" class="nav-hire">Hire Me</a></li>
+        </ul>
+
+        <div style="display: flex; align-items: center; gap: 0.75rem">
+          <button
+            id="theme-toggle"
+            class="theme-toggle"
+            aria-label="Toggle dark mode"
+          >
+            <svg
+              class="icon-sun"
+              width="17"
+              height="17"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+            <svg
+              class="icon-moon"
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+          </button>
+          <button
+            class="hamburger"
+            id="hamburger"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ═══════════ HERO ═══════════ -->
+    <section id="hero" aria-label="Introduction">
+      <div class="hero-bg-num" aria-hidden="true">TH</div>
+      <div class="hero-inner">
+        <div class="hero-tag">
+          <span class="avail-dot"></span>
+          Open to part-time &amp; remote work
+        </div>
+        <h1 class="hero-name">
+          Md. Talha<br /><span class="orange">Hossain.</span>
+        </h1>
+        <p class="hero-sub">
+          <strong>Full-stack web developer</strong> from Dhaka, Bangladesh. I
+          build real things — e-commerce sites, REST APIs, monitoring systems —
+          using <strong>Node.js, Express &amp; MongoDB</strong>.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-fill">
+            <svg
+              width="15"
+              height="15"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.2"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+            See My Projects
+          </a>
+          <a href="#contact" class="btn-ghost"> Get In Touch </a>
+        </div>
+        <div class="hero-chips">
+          <span class="chip">Node.js</span>
+          <span class="chip">Express.js</span>
+          <span class="chip">MongoDB</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">REST APIs</span>
+          <span class="chip">Bootstrap</span>
+          <span class="chip">Git &amp; GitHub</span>
+          <span class="chip">Dhaka, Bangladesh</span>
+        </div>
+      </div>
+      <div class="scroll-cue" aria-hidden="true">Scroll down</div>
+    </section>
+
+    <!-- ═══════════ ABOUT ═══════════ -->
+    <section id="about" aria-label="About me">
+      <div class="s-inner">
+        <div class="about-layout">
+          <div class="about-text reveal">
+            <div class="s-header">
+              <span class="s-num">01</span>
+              <h2 class="s-title">About me.</h2>
+            </div>
+            <p>
+              I'm a <strong>first-year BSc student at SUST</strong> — and I
+              didn't wait for a degree to start building. I've independently
+              shipped 7+ full-stack web applications, from an e-commerce
+              platform to a production-style uptime monitoring API built without
+              any external frameworks.
+            </p>
+            <p>
+              My stack centres on
+              <strong>Node.js, Express, and MongoDB</strong> on the back-end,
+              with clean, responsive front-ends in
+              <strong>Bootstrap and jQuery</strong>. I care about shipping
+              things that actually work, not just look good in a screenshot.
+            </p>
+            <p>
+              I'm looking for <strong>part-time or remote roles</strong> in web
+              development. I'm also available as an online tutor for classes
+              8–12 in English, ICT, and Physics.
+            </p>
+            <div class="socials">
+              <a
+                href="https://www.linkedin.com/in/talhahossain"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-btn"
+              >
+                <svg
+                  width="14"
+                  height="14"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"
+                  />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+                LinkedIn
+              </a>
+              <a
+                href="https://github.com/talhahossa1n"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-btn"
+              >
+                <svg
+                  width="14"
+                  height="14"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                  />
+                </svg>
+                GitHub
+              </a>
+              <a href="mailto:talhahossain56@gmail.com" class="social-btn">
+                <svg
+                  width="14"
+                  height="14"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <rect x="2" y="4" width="20" height="16" rx="2" />
+                  <path d="M22 7L12 13 2 7" />
+                </svg>
+                Email
+              </a>
+            </div>
+          </div>
+          <div class="stats-grid reveal reveal-delay-2">
+            <div class="stat-box">
+              <div class="stat-num">7+</div>
+              <div class="stat-lbl">Projects shipped</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-num">5.0</div>
+              <div class="stat-lbl">GPA — SSC &amp; HSC</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-num">90+</div>
+              <div class="stat-lbl">Club members managed</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-num">100%</div>
+              <div class="stat-lbl">Remote-ready</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ SKILLS ═══════════ -->
+    <section id="skills" aria-label="Technical skills">
+      <div class="s-inner">
+        <div class="s-header reveal">
+          <span class="s-num">02</span>
+          <h2 class="s-title">My toolkit.</h2>
+        </div>
+        <div class="skills-layout">
+          <div class="skill-card reveal">
+            <div class="skill-card-icon">⚙️</div>
+            <div class="skill-card-title">Languages</div>
+            <div class="tag-cloud">
+              <span class="sk-tag">HTML</span>
+              <span class="sk-tag">CSS</span>
+              <span class="sk-tag">JavaScript</span>
+              <span class="sk-tag">Python</span>
+              <span class="sk-tag">C</span>
+            </div>
+          </div>
+          <div class="skill-card reveal reveal-delay-1">
+            <div class="skill-card-icon">🖥️</div>
+            <div class="skill-card-title">Back-End</div>
+            <div class="tag-cloud">
+              <span class="sk-tag">Node.js</span>
+              <span class="sk-tag">Express.js</span>
+              <span class="sk-tag">MongoDB</span>
+              <span class="sk-tag">Mongoose</span>
+              <span class="sk-tag">EJS</span>
+              <span class="sk-tag">REST APIs</span>
+            </div>
+          </div>
+          <div class="skill-card reveal reveal-delay-2">
+            <div class="skill-card-icon">🎨</div>
+            <div class="skill-card-title">Front-End</div>
+            <div class="tag-cloud">
+              <span class="sk-tag">Bootstrap</span>
+              <span class="sk-tag">jQuery</span>
+              <span class="sk-tag">Responsive Design</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-card-icon">🛠️</div>
+            <div class="skill-card-title">Tools &amp; Platforms</div>
+            <div class="tag-cloud">
+              <span class="sk-tag">Git</span>
+              <span class="sk-tag">GitHub</span>
+              <span class="sk-tag">VS Code</span>
+              <span class="sk-tag">Render</span>
+              <span class="sk-tag">OAuth</span>
+              <span class="sk-tag">Mailchimp API</span>
+            </div>
+          </div>
+          <div class="skill-card reveal reveal-delay-1">
+            <div class="skill-card-icon">🖼️</div>
+            <div class="skill-card-title">Design &amp; Other</div>
+            <div class="tag-cloud">
+              <span class="sk-tag">Canva</span>
+              <span class="sk-tag">Photoshop</span>
+              <span class="sk-tag">Excel</span>
+              <span class="sk-tag">Discord Admin</span>
+            </div>
+          </div>
+          <div class="skill-card reveal reveal-delay-2">
+            <div class="skill-card-icon">📚</div>
+            <div class="skill-card-title">Tutoring Subjects</div>
+            <div class="tag-cloud">
+              <span class="sk-tag">English</span>
+              <span class="sk-tag">ICT</span>
+              <span class="sk-tag">Physics</span>
+              <span class="sk-tag">BGS</span>
+              <span class="sk-tag">Bangla</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ PROJECTS ═══════════ -->
+    <section id="projects" aria-label="Projects">
+      <div class="s-inner">
+        <div class="s-header reveal">
+          <span class="s-num">03</span>
+          <h2 class="s-title">Things I've built.</h2>
+        </div>
+        <div class="projects-grid">
+          <article class="proj-card reveal">
+            <div class="proj-top">
+              <span class="proj-emoji" aria-hidden="true">🛍️</span>
+              <a
+                href="https://github.com/talhahossa1n/tasnims-world"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="proj-gh"
+                aria-label="View Tasnim's World on GitHub"
+              >
+                <svg
+                  width="15"
+                  height="15"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"
+                  />
+                </svg>
+              </a>
+            </div>
+            <h3 class="proj-name">Tasnim's World — T-Shirt Shop</h3>
+            <p class="proj-desc">
+              Full-stack e-commerce site for a designer's brand. Features
+              product listings, an add-to-cart sidebar, checkout with billing
+              form, and order saving via the file system — fully responsive.
+            </p>
+            <div class="proj-stack">
+              <span class="proj-tag">Node.js</span>
+              <span class="proj-tag">Express</span>
+              <span class="proj-tag">Bootstrap</span>
+              <span class="proj-tag">jQuery</span>
+            </div>
+          </article>
+
+          <article class="proj-card reveal reveal-delay-1">
+            <div class="proj-top">
+              <span class="proj-emoji" aria-hidden="true">📡</span>
+              <a
+                href="https://github.com/talhahossa1n/Uptime-Monitoring-API"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="proj-gh"
+                aria-label="View Uptime Monitoring API on GitHub"
+              >
+                <svg
+                  width="15"
+                  height="15"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"
+                  />
+                </svg>
+              </a>
+            </div>
+            <h3 class="proj-name">Uptime Monitoring API</h3>
+            <p class="proj-desc">
+              Production-style REST API built from raw Node.js — zero external
+              frameworks. Token authentication, background workers, and
+              real-time SMS alerts when monitored URLs change status.
+            </p>
+            <div class="proj-stack">
+              <span class="proj-tag">Raw Node.js</span>
+              <span class="proj-tag">Token Auth</span>
+              <span class="proj-tag">SMS Alerts</span>
+              <span class="proj-tag">Workers</span>
+            </div>
+          </article>
+
+          <article class="proj-card reveal">
+            <div class="proj-top">
+              <span class="proj-emoji" aria-hidden="true">✉️</span>
+              <a
+                href="https://github.com/talhahossa1n/Newsletter"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="proj-gh"
+                aria-label="View Newsletter App on GitHub"
+              >
+                <svg
+                  width="15"
+                  height="15"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"
+                  />
+                </svg>
+              </a>
+            </div>
+            <h3 class="proj-name">Newsletter Signup App</h3>
+            <p class="proj-desc">
+              Subscriber management app with Mailchimp API integration,
+              dark-mode toggle, and deployment on Render. Users sign up and
+              receive confirmation via automated email sequences.
+            </p>
+            <div class="proj-stack">
+              <span class="proj-tag">Node.js</span>
+              <span class="proj-tag">Express</span>
+              <span class="proj-tag">Mailchimp API</span>
+              <span class="proj-tag">Render</span>
+            </div>
+          </article>
+
+          <article class="proj-card reveal reveal-delay-1">
+            <div class="proj-top">
+              <span class="proj-emoji" aria-hidden="true">🌤️</span>
+              <a
+                href="https://github.com/talhahossa1n/weather-app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="proj-gh"
+                aria-label="View Weather App on GitHub"
+              >
+                <svg
+                  width="15"
+                  height="15"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"
+                  />
+                </svg>
+              </a>
+            </div>
+            <h3 class="proj-name">Weather App</h3>
+            <p class="proj-desc">
+              City-based weather search supporting Metric, Imperial, and
+              Standard units. Live OpenWeatherMap data rendered in a clean card
+              layout — deployed on Render.
+            </p>
+            <div class="proj-stack">
+              <span class="proj-tag">Node.js</span>
+              <span class="proj-tag">Express</span>
+              <span class="proj-tag">OpenWeatherMap</span>
+              <span class="proj-tag">Render</span>
+            </div>
+          </article>
+
+          <article class="proj-card reveal">
+            <div class="proj-top">
+              <span class="proj-emoji" aria-hidden="true">✍️</span>
+              <a
+                href="https://github.com/talhahossa1n/blog-site"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="proj-gh"
+                aria-label="View Blog Site on GitHub"
+              >
+                <svg
+                  width="15"
+                  height="15"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"
+                  />
+                </svg>
+              </a>
+            </div>
+            <h3 class="proj-name">Blog Platform</h3>
+            <p class="proj-desc">
+              Multi-page blog where users compose, read, and delete posts.
+              Implements preview / Read More logic, individual post pages with
+              delete buttons, and persistent MongoDB storage.
+            </p>
+            <div class="proj-stack">
+              <span class="proj-tag">Node.js</span>
+              <span class="proj-tag">Express</span>
+              <span class="proj-tag">EJS</span>
+              <span class="proj-tag">MongoDB</span>
+            </div>
+          </article>
+
+          <article class="proj-card reveal reveal-delay-1">
+            <div class="proj-top">
+              <span class="proj-emoji" aria-hidden="true">📖</span>
+              <a
+                href="https://github.com/talhahossa1n/wiki-api"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="proj-gh"
+                aria-label="View Wiki API on GitHub"
+              >
+                <svg
+                  width="15"
+                  height="15"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"
+                  />
+                </svg>
+              </a>
+            </div>
+            <h3 class="proj-name">Wiki RESTful API</h3>
+            <p class="proj-desc">
+              Full CRUD REST API for a wiki-style article system. Supports GET,
+              POST, PUT, PATCH, and DELETE on both collection and individual
+              endpoints with proper error handling.
+            </p>
+            <div class="proj-stack">
+              <span class="proj-tag">Node.js</span>
+              <span class="proj-tag">Express</span>
+              <span class="proj-tag">MongoDB</span>
+              <span class="proj-tag">Mongoose</span>
+            </div>
+          </article>
+
+          <article class="proj-card reveal">
+            <div class="proj-top">
+              <span class="proj-emoji" aria-hidden="true">✅</span>
+              <a
+                href="https://github.com/talhahossa1n/todo-list"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="proj-gh"
+                aria-label="View Todo List App on GitHub"
+              >
+                <svg
+                  width="15"
+                  height="15"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"
+                  />
+                </svg>
+              </a>
+            </div>
+            <h3 class="proj-name">Todo List App</h3>
+            <p class="proj-desc">
+              Dynamic to-do app with default and custom named lists via dynamic
+              routes. Persistent MongoDB storage and a clean Bootstrap UI.
+            </p>
+            <div class="proj-stack">
+              <span class="proj-tag">Node.js</span>
+              <span class="proj-tag">EJS</span>
+              <span class="proj-tag">MongoDB</span>
+              <span class="proj-tag">Bootstrap</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ EXPERIENCE ═══════════ -->
+    <section id="experience" aria-label="Leadership and activities">
+      <div class="s-inner">
+        <div class="s-header reveal">
+          <span class="s-num">04</span>
+          <h2 class="s-title">Leadership.</h2>
+        </div>
+        <div class="exp-list reveal">
+          <div class="exp-item">
+            <div class="exp-left">
+              <div class="exp-date">Aug 2024 – Aug 2025</div>
+              <div class="exp-org">IT Club · Noubahini College Dhaka</div>
+            </div>
+            <div class="exp-right">
+              <div class="exp-role">Head of Technology</div>
+              <ul class="exp-bullets">
+                <li>
+                  Managed digital resources and online records, reducing
+                  attendance tracking time by <strong>60%</strong>.
+                </li>
+                <li>
+                  Administered the club's Discord server with
+                  <strong>90+ active members</strong>, improving team
+                  communication.
+                </li>
+                <li>
+                  Led technology initiatives to streamline club operations and
+                  efficiency.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="exp-item">
+            <div class="exp-left">
+              <div class="exp-date">Sep 2023 – Aug 2025</div>
+              <div class="exp-org">Utkorsho · Onnorokom EdTech</div>
+            </div>
+            <div class="exp-right">
+              <div class="exp-role">Ambassador</div>
+              <ul class="exp-bullets">
+                <li>
+                  Recognised as one of the <strong>best writers</strong> in the
+                  platform's ambassador writing campaign.
+                </li>
+                <li>
+                  Promoted core values and engaged the student learning
+                  community through ambassadorial activities.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ EDUCATION ═══════════ -->
+    <section id="education" aria-label="Education">
+      <div class="s-inner">
+        <div class="s-header reveal">
+          <span class="s-num">05</span>
+          <h2 class="s-title">Education.</h2>
+        </div>
+        <div class="edu-grid">
+          <div class="edu-card current reveal">
+            <div class="edu-badge">Currently Enrolled</div>
+            <div class="edu-year">Exp. 2030</div>
+            <div class="edu-school">
+              Shahjalal University of Science &amp; Technology
+            </div>
+            <div class="edu-loc">📍 Sylhet, Bangladesh</div>
+            <div class="edu-deg">
+              BSc in Geography and Environment (GEE) · 1st Year, 1st Semester
+            </div>
+          </div>
+
+          <div class="edu-card reveal reveal-delay-1">
+            <div class="edu-badge">HSC · 2025</div>
+            <div class="edu-board">Dhaka Board</div>
+            <div class="edu-school">Noubahini College Dhaka</div>
+            <div class="edu-loc">📍 Dhaka, Bangladesh</div>
+            <div class="edu-deg">Higher Secondary Certificate · Science</div>
+            <div class="edu-gpa">★ GPA 5.00 / 5.00</div>
+          </div>
+
+          <div class="edu-card reveal reveal-delay-2">
+            <div class="edu-badge">SSC · 2023</div>
+            <div class="edu-board">Dhaka Board</div>
+            <div class="edu-school">Uttara High School and College</div>
+            <div class="edu-loc">📍 Dhaka, Bangladesh</div>
+            <div class="edu-deg">Secondary School Certificate · Science</div>
+            <div class="edu-gpa">★ GPA 5.00 / 5.00</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ ACHIEVEMENTS ═══════════ -->
+    <section id="achievements" aria-label="Achievements">
+      <div class="s-inner">
+        <div class="s-header reveal">
+          <span class="s-num">06</span>
+          <h2 class="s-title">Achievements.</h2>
+        </div>
+        <div class="ach-list">
+          <div class="ach-card reveal">
+            <div class="ach-icon">🥈</div>
+            <p class="ach-text">
+              Achieved <strong>2nd place in the Science Group</strong> in the
+              college-wide pretest examination — 2024.
+            </p>
+          </div>
+          <div class="ach-card reveal reveal-delay-1">
+            <div class="ach-icon">✍️</div>
+            <p class="ach-text">
+              Recognised as one of the <strong>best writers</strong> in
+              Utkorsho's "অ্যাম্বাসেডরদের চোখে উৎকর্ষের মূলনীতি" campaign.
+            </p>
+          </div>
+          <div class="ach-card reveal reveal-delay-2">
+            <div class="ach-icon">🎓</div>
+            <p class="ach-text">
+              Achieved <strong>GPA 5.00 / 5.00</strong> in both SSC (2023) and
+              HSC (2025) — Dhaka Board.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ CERTIFICATIONS ═══════════ -->
+    <section id="certs" aria-label="Certifications">
+      <div class="s-inner">
+        <div class="s-header reveal">
+          <span class="s-num">07</span>
+          <h2 class="s-title">Certifications.</h2>
+        </div>
+        <div class="certs-list reveal">
+          <div class="cert-row">
+            <div class="cert-left">
+              <div class="cert-icon" aria-hidden="true">🎓</div>
+              <div>
+                <div class="cert-name">
+                  Academic Excellence and Skills Development
+                </div>
+                <div class="cert-by">10 Minute School</div>
+              </div>
+            </div>
+            <div class="cert-date">Aug 2023</div>
+          </div>
+          <div class="cert-row">
+            <div class="cert-left">
+              <div class="cert-icon" aria-hidden="true">💰</div>
+              <div>
+                <div class="cert-name">Money Management</div>
+                <div class="cert-by">10 Minute School</div>
+              </div>
+            </div>
+            <div class="cert-date">Jul 2023</div>
+          </div>
+          <div class="cert-row">
+            <div class="cert-left">
+              <div class="cert-icon" aria-hidden="true">🗣️</div>
+              <div>
+                <div class="cert-name">Effective Communication Strategies</div>
+                <div class="cert-by">10 Minute School</div>
+              </div>
+            </div>
+            <div class="cert-date">Aug 2023</div>
+          </div>
+          <div class="cert-row">
+            <div class="cert-left">
+              <div class="cert-icon" aria-hidden="true">📄</div>
+              <div>
+                <div class="cert-name">
+                  CV Writing and Interview Preparation
+                </div>
+                <div class="cert-by">10 Minute School</div>
+              </div>
+            </div>
+            <div class="cert-date">Jul 2023</div>
+          </div>
+          <div class="cert-row">
+            <div class="cert-left">
+              <div class="cert-icon" aria-hidden="true">💬</div>
+              <div>
+                <div class="cert-name">Effective Communication Mastery</div>
+                <div class="cert-by">10 Minute School</div>
+              </div>
+            </div>
+            <div class="cert-date">Aug 2023</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ CONTACT ═══════════ -->
+    <section id="contact" aria-label="Contact">
+      <div class="s-inner">
+        <div class="contact-layout">
+          <div class="contact-left reveal">
+            <div class="s-header" style="margin-bottom: 1rem">
+              <span class="s-num">08</span>
+              <h2 class="s-title">Let's work<br />together.</h2>
+            </div>
+            <p class="contact-tagline">
+              Looking for a motivated web developer for a part-time or remote
+              role? Or need a tutor for classes 8–12? I'd love to hear from you.
+            </p>
+            <div class="contact-links">
+              <a href="mailto:talhahossain56@gmail.com" class="c-link">
+                <svg
+                  width="16"
+                  height="16"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <rect x="2" y="4" width="20" height="16" rx="2" />
+                  <path d="M22 7L12 13 2 7" />
+                </svg>
+                talhahossain56@gmail.com
+              </a>
+              <a
+                href="https://www.linkedin.com/in/talhahossain"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="c-link"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"
+                  />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+                linkedin.com/in/talhahossain
+              </a>
+              <a
+                href="https://github.com/talhahossa1n"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="c-link"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                  />
+                </svg>
+                github.com/talhahossa1n
+              </a>
+              <a href="tel:+8801937827817" class="c-link">
+                <svg
+                  width="16"
+                  height="16"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.28h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.18 6.18l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
+                  />
+                </svg>
+                +880 1937-827817
+              </a>
+            </div>
+            <div class="avail-badge">
+              <span class="avail-dot"></span>
+              Available now — Part-time &amp; Remote
+            </div>
+          </div>
+          <div class="contact-right reveal reveal-delay-2">
+            <div class="info-block">
+              <div class="info-item">
+                <div class="info-label">Location</div>
+                <div class="info-val">Uttarkhan, Dhaka-1230, Bangladesh</div>
+              </div>
+              <div class="info-item">
+                <div class="info-label">Work Type</div>
+                <div class="info-val">Part-time · Remote · Internships</div>
+              </div>
+              <div class="info-item">
+                <div class="info-label">Open To</div>
+                <div class="info-val">
+                  Web Development · Online-Offline Tutoring
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-label">Languages</div>
+                <div class="info-val">
+                  Bengali (Native) · English (Proficient)
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-label">Currently</div>
+                <div class="info-val">BSc @ SUST, Sylhet — 1st Year</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer>
+      <div class="foot-logo">Talha<span>.</span></div>
+      <p class="foot-txt">© 2026 Md. Talha Hossain · Dhaka, Bangladesh</p>
+      <p class="foot-txt">Built with HTML, CSS &amp; JavaScript</p>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
