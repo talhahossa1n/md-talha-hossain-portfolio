@@ -31,8 +31,8 @@ app.listen(PORT, () => {
 ╚════════════════════════════════════════════╝
 
 📍 Local URL: http://localhost:${PORT}
-🌐 Network URL: http://<your-ip>:${PORT}
 
 Press Ctrl+C to stop the server
   `);
+//   🌐 Network URL: http://<your-ip>:${PORT}
 });
