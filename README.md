@@ -27,8 +27,7 @@ portfolio/
 ├── index.html          # Main HTML file with semantic markup
 ├── styles.css          # All styling (light/dark modes, responsive)
 ├── script.js           # Vanilla JavaScript functionality
-├── README.md           # Project documentation (this file)
-<!-- └── talha_portfolio.html # Original combined file (deprecated) -->
+└── README.md           # Project documentation (this file)
 ```
 
 ---
