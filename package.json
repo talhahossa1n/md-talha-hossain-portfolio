@@ -1,0 +1,36 @@
+{
+  "name": "md-talha-hossain-portfolio",
+  "version": "2.0.0",
+  "description": "Personal portfolio website of Md. Talha Hossain - Full-stack web developer from Dhaka, Bangladesh",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "portfolio",
+    "web-developer",
+    "node.js",
+    "express",
+    "mongodb",
+    "full-stack"
+  ],
+  "author": "Md. Talha Hossain",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/talhahossa1n/md-talha-hossain-portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/talhahossa1n/md-talha-hossain-portfolio/issues"
+  },
+  "homepage": "https://github.com/talhahossa1n/md-talha-hossain-portfolio#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}

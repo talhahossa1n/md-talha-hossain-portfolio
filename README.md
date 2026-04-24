@@ -27,6 +27,9 @@ portfolio/
 ├── index.html          # Main HTML file with semantic markup
 ├── styles.css          # All styling (light/dark modes, responsive)
 ├── script.js           # Vanilla JavaScript functionality
+├── server.js           # Express.js server for local development
+├── package.json        # Node.js dependencies and metadata
+├── .gitignore          # Git ignore file
 └── README.md           # Project documentation (this file)
 ```
 
@@ -39,6 +42,11 @@ portfolio/
 - **HTML5** — Semantic markup with accessibility attributes
 - **CSS3** — Variables, Grid, Flexbox, animations, media queries
 - **JavaScript (ES6+)** — Vanilla JS, no frameworks/libraries
+
+### Backend (Development Server)
+
+- **Node.js** — JavaScript runtime for server-side
+- **Express.js** — Lightweight web framework for serving static files
 
 ### Key Technologies
 
@@ -66,22 +74,36 @@ portfolio/
    cd portfolio
    ```
 
-2. **Open in Browser**
-   - Local: Double-click `index.html` or run a local server
+2. **Install Dependencies**
 
    ```bash
-   # Using Python
-   python -m http.server 8000
-
-   # Using Node.js (http-server)
-   npx http-server
+   npm install
    ```
 
-   - Then navigate to `http://localhost:8000`
+3. **Run the Server**
 
-3. **Deploy**
-   - Upload files to any web hosting (Render, Vercel, Netlify, etc.)
-   - No build process required — files are production-ready
+   ```bash
+   npm start
+   ```
+
+   The server will start at `http://localhost:3000`
+
+### Alternative: Quick Testing (No Installation)
+
+If you just want to test without installing Node.js:
+
+- **Double-click** `index.html` to open in browser, or
+- **Using Python** (if installed):
+  ```bash
+  python -m http.server 8000
+  ```
+  Then navigate to `http://localhost:8000`
+
+### Deploy
+
+- Upload files to any web hosting (Render, Vercel, Netlify, Heroku, etc.)
+- **For Node.js hosting** (Render, Heroku): Push the repo, they'll auto-detect `package.json` and `server.js`
+- **For static hosting** (Vercel, Netlify, GitHub Pages): Just upload HTML, CSS, and JS files
 
 ---
 
@@ -126,6 +148,25 @@ Interactive features:
 - **Scroll Reveal** — IntersectionObserver-based fade-in animations
 - **Skill Tag Cycling** — Animated tag highlighting on card visibility
 - **Reduced Motion Support** — Respects system accessibility settings
+
+### `server.js`
+
+Express.js server for local development:
+
+- **Static File Serving** — Serves HTML, CSS, JS files from the project directory
+- **Port Configuration** — Runs on port 3000 (customizable via `PORT` environment variable)
+- **Catch-all Routes** — Routes all requests to `index.html` for single-page app behavior
+- **Error Handling** — Basic error middleware for debugging
+- **Welcome Message** — Displays server information on startup
+
+### `package.json`
+
+Node.js project configuration:
+
+- **Dependencies** — Express.js for server
+- **Scripts** — `npm start` to run the server
+- **Metadata** — Project name, version, author, repository links
+- **Node/npm Requirements** — Specifies minimum versions supported
 
 ---
 
