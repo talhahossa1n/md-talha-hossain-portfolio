@@ -9,18 +9,18 @@
 
 /* ── LIGHT MODE (default) ───────────────────────────────── */
 :root {
-  --cream: #f7f4ef;
-  --cream2: #f0ece4;
-  --white: #ffffff;
-  --ink: #1a1814;
-  --ink2: #3d3a35;
-  --muted: #7a7570;
-  --orange: #d45c2a;
-  --orange-l: #f5e8df;
-  --border: #e0dad0;
+  --cream: rgb(247 244 239);
+  --cream2: rgb(240 236 228);
+  --white: rgb(255 255 255);
+  --ink: rgb(26 24 20);
+  --ink2: rgb(61 58 53);
+  --muted: rgb(122 117 112);
+  --orange: rgb(37 99 235);
+  --orange-l: rgb(37 99 235 / 10%);
+  --border: rgb(224 218 208);
   --shadow: rgba(26, 24, 20, 0.06);
-  --ink-surface: #1a1814;
-  --ink-surface-fg: #f0ebe0;
+  --ink-surface: rgb(26 24 20);
+  --ink-surface-fg: rgba(240, 235, 224, 1);
   --nav-blur-bg: rgba(247, 244, 239, 0.92);
   --ff-display: "Fraunces", Georgia, serif;
   --ff-body: "Plus Jakarta Sans", sans-serif;
@@ -29,18 +29,18 @@
 
 /* ── DARK MODE ──────────────────────────────────────────── */
 [data-theme="dark"] {
-  --cream: #0e0c09;
-  --cream2: #161209;
-  --white: #1b1610;
-  --ink: #f0ebe0;
-  --ink2: #c0b8af;
-  --muted: #7a7570;
-  --orange: #e06b38;
-  --orange-l: rgba(224, 107, 56, 0.13);
+  --cream: rgb(9 10 14);
+  --cream2: rgb(9 12 22);
+  --white: rgb(16 18 27);
+  --ink: rgba(240, 235, 224, 1);
+  --ink2: rgba(192, 184, 175, 1);
+  --muted: rgba(122, 117, 112, 1);
+  --orange: rgb(56 123 224);
+  --orange-l: rgb(56 122 224 / 8%);
   --border: rgba(255, 255, 255, 0.09);
   --shadow: rgba(0, 0, 0, 0.35);
-  --ink-surface: #080604;
-  --ink-surface-fg: #f0ebe0;
+  --ink-surface: rgba(8, 6, 4, 1);
+  --ink-surface-fg: rgba(240, 235, 224, 1);
   --nav-blur-bg: rgba(14, 12, 9, 0.94);
 }
 
