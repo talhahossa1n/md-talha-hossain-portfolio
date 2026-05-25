@@ -9,19 +9,19 @@
 
 /* ── LIGHT MODE (default) ───────────────────────────────── */
 :root {
-  --cream: rgb(247 244 239);
-  --cream2: rgb(240 236 228);
-  --white: rgb(255 255 255);
-  --ink: rgb(26 24 20);
-  --ink2: rgb(61 58 53);
-  --muted: rgb(122 117 112);
-  --orange: rgb(37 99 235);
-  --orange-l: rgb(37 99 235 / 10%);
-  --border: rgb(224 218 208);
-  --shadow: rgba(26, 24, 20, 0.06);
-  --ink-surface: rgb(26 24 20);
-  --ink-surface-fg: rgba(240, 235, 224, 1);
-  --nav-blur-bg: rgba(247, 244, 239, 0.92);
+  --cream: rgb(239, 243, 247);
+  --cream2: rgb(228, 234, 240);
+  --white: rgb(255, 255, 255);
+  --ink: rgb(20, 23, 26);
+  --ink2: rgb(53, 56, 61);
+  --muted: rgb(112, 116, 122);
+  --orange: rgb(37, 123, 235);
+  --orange-l: rgba(37, 123, 235, 0.1);
+  --border: rgb(208, 215, 224);
+  --shadow: rgba(20, 22, 26, 0.06);
+  --ink-surface: rgb(20, 22, 26);
+  --ink-surface-fg: rgb(224, 231, 240);
+  --nav-blur-bg: rgba(239, 242, 247, 0.92);
   --ff-display: "Fraunces", Georgia, serif;
   --ff-body: "Plus Jakarta Sans", sans-serif;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
@@ -32,16 +32,16 @@
   --cream: rgb(9 10 14);
   --cream2: rgb(9 12 22);
   --white: rgb(16 18 27);
-  --ink: rgba(240, 235, 224, 1);
-  --ink2: rgba(192, 184, 175, 1);
-  --muted: rgba(122, 117, 112, 1);
+  --ink: rgb(224, 228, 240);
+  --ink2: rgb(175, 178, 192);
+  --muted: rgb(112, 114, 122);
   --orange: rgb(56 123 224);
   --orange-l: rgb(56 122 224 / 8%);
   --border: rgba(255, 255, 255, 0.09);
   --shadow: rgba(0, 0, 0, 0.35);
-  --ink-surface: rgba(8, 6, 4, 1);
-  --ink-surface-fg: rgba(240, 235, 224, 1);
-  --nav-blur-bg: rgba(14, 12, 9, 0.94);
+  --ink-surface: rgb(4, 5, 8);
+  --ink-surface-fg: rgb(224, 231, 240);
+  --nav-blur-bg: rgba(9, 11, 14, 0.94);
 }
 
 html {
@@ -879,7 +879,7 @@ section {
 .edu-card.current {
   background: var(--ink-surface);
   border-color: var(--ink-surface);
-  color: #f0ebe0;
+  color: #e0e6f0;
 }
 
 .edu-badge {
@@ -914,7 +914,7 @@ section {
 }
 
 .edu-card.current .edu-school {
-  color: #f0ebe0;
+  color: #e0e7f0;
 }
 .edu-card:not(.current) .edu-school {
   color: var(--ink);
@@ -926,7 +926,7 @@ section {
 }
 
 .edu-card.current .edu-loc {
-  color: rgba(240, 235, 224, 0.55);
+  color: rgba(224, 230, 240, 0.55);
 }
 .edu-card:not(.current) .edu-loc {
   color: var(--muted);
@@ -938,7 +938,7 @@ section {
 }
 
 .edu-card.current .edu-deg {
-  color: rgba(240, 235, 224, 0.75);
+  color: rgba(224, 230, 240, 0.75);
 }
 .edu-card:not(.current) .edu-deg {
   color: var(--ink2);
@@ -972,7 +972,7 @@ section {
 }
 
 .edu-card.current .edu-year {
-  color: rgba(240, 235, 224, 0.4);
+  color: rgba(224, 231, 240, 0.4);
 }
 .edu-card:not(.current) .edu-year {
   color: var(--muted);
@@ -1092,14 +1092,14 @@ section {
 /* ─── CONTACT ────────────────────────────────────────────── */
 #contact {
   background: var(--ink-surface);
-  color: #f0ebe0;
+  color: #e0e7f0;
 }
 
 #contact .s-num {
   color: var(--orange);
 }
 #contact .s-title {
-  color: #f0ebe0;
+  color: #e0e7f0;
 }
 
 .contact-layout {
@@ -1114,7 +1114,7 @@ section {
 
 .contact-tagline {
   font-size: 1rem;
-  color: rgba(247, 244, 239, 0.6);
+  color: rgba(239, 243, 247, 0.6);
   line-height: 1.75;
   margin-bottom: 2.5rem;
   margin-top: -1rem;
@@ -1131,10 +1131,10 @@ section {
   align-items: center;
   gap: 0.85rem;
   padding: 1.1rem 1.4rem;
-  border: 1px solid rgba(247, 244, 239, 0.1);
+  border: 1px solid rgba(239, 242, 247, 0.1);
   border-radius: 12px;
-  background: rgba(247, 244, 239, 0.04);
-  color: rgba(247, 244, 239, 0.75);
+  background: rgba(239, 242, 247, 0.04);
+  color: rgba(239, 243, 247, 0.75);
   font-size: 0.9rem;
   font-weight: 500;
   cursor: pointer;
@@ -1144,7 +1144,7 @@ section {
 
 .c-link:hover {
   border-color: var(--orange);
-  background: rgba(212, 92, 42, 0.1);
+  background: rgba(42, 96, 212, 0.1);
   color: var(--cream);
   transform: translateX(4px);
 }
@@ -1158,15 +1158,15 @@ section {
 }
 
 .info-block {
-  border: 1px solid rgba(247, 244, 239, 0.1);
+  border: 1px solid rgba(239, 242, 247, 0.1);
   border-radius: 20px;
   padding: 2.5rem;
-  background: rgba(247, 244, 239, 0.04);
+  background: rgba(239, 243, 247, 0.04);
 }
 
 .info-item {
   padding: 1.2rem 0;
-  border-bottom: 1px solid rgba(247, 244, 239, 0.08);
+  border-bottom: 1px solid rgba(239, 242, 247, 0.08);
 }
 
 .info-item:last-child {
@@ -1188,7 +1188,7 @@ section {
 
 .info-val {
   font-size: 0.92rem;
-  color: rgba(247, 244, 239, 0.8);
+  color: rgba(239, 242, 247, 0.8);
 }
 
 .avail-badge {
@@ -1207,7 +1207,7 @@ section {
 
 /* ─── FOOTER ─────────────────────────────────────────────── */
 footer {
-  background: #0f0d0a;
+  background: #0a0c0f;
   padding: 1.75rem 3.5rem;
   display: flex;
   align-items: center;
@@ -1221,7 +1221,7 @@ footer {
   font-family: var(--ff-display);
   font-weight: 900;
   font-size: 1.1rem;
-  color: #f0ebe0;
+  color: #e0e7f0;
 }
 
 .foot-logo span {
@@ -1230,7 +1230,7 @@ footer {
 
 .foot-txt {
   font-size: 0.78rem;
-  color: rgba(247, 244, 239, 0.35);
+  color: rgba(239, 242, 247, 0.35);
 }
 
 /* ─── THEME TOGGLE ──────────────────────────────────────── */
