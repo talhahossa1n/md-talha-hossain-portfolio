@@ -172,18 +172,36 @@ Node.js project configuration:
 
 ## 🎨 Color Scheme
 
-### Light Mode
+### Orange Theme
+
+#### Light Mode
 
 - Background: `#f7f4ef` (Cream)
 - Text: `#1a1814` (Ink)
 - Accent: `#d45c2a` (Orange)
 - Borders: `#e0dad0` (Light Gray)
 
-### Dark Mode
+#### Dark Mode
 
 - Background: `#0e0c09` (Near Black)
 - Text: `#f0ebe0` (Cream White)
 - Accent: `#e06b38` (Bright Orange)
+- Borders: `rgba(255, 255, 255, 0.09)` (Subtle White)
+
+### Blue Theme
+
+#### Light Mode
+
+- Background: `#eff3f7` (Cream)
+- Text: `#14171a` (Ink)
+- Accent: `#257beb` (Blue)
+- Borders: `#d0d7e0` (Light Gray)
+
+#### Dark Mode
+
+- Background: `#090a0e` (Near Black)
+- Text: `#e0e4f0` (Cream White)
+- Accent: `#387be0` (Blue)
 - Borders: `rgba(255, 255, 255, 0.09)` (Subtle White)
 
 ---

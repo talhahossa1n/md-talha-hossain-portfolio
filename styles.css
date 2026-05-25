@@ -1109,9 +1109,6 @@ section {
   align-items: start;
 }
 
-.contact-left {
-}
-
 .contact-tagline {
   font-size: 1rem;
   color: rgba(239, 243, 247, 0.6);
@@ -1152,9 +1149,6 @@ section {
 .c-link svg {
   flex-shrink: 0;
   color: var(--orange);
-}
-
-.contact-right {
 }
 
 .info-block {
