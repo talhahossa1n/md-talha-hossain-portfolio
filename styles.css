@@ -71,6 +71,8 @@ footer,
 .stat-box,
 .social-btn,
 .cert-row,
+.svc-card,
+.svc-extra,
 .exp-item,
 .ach-card,
 .s-title,
@@ -150,7 +152,6 @@ nav.scrolled {
   color: var(--skyblue);
 }
 
-/* FIX 1: Grouped right-side elements */
 .nav-right {
   display: flex;
   align-items: center;
@@ -978,6 +979,198 @@ section {
   color: var(--muted);
 }
 
+/* ─── SERVICES ───────────────────────────────────────────── */
+#services {
+  background: var(--cream);
+  border-bottom: 1px solid var(--border);
+}
+
+#services .s-header {
+  margin-bottom: 1.5rem;
+}
+
+.svc-intro {
+  font-size: 1rem;
+  color: var(--ink2);
+  line-height: 1.8;
+  max-width: 620px;
+  margin-bottom: 3rem;
+}
+
+.svc-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.svc-card {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: 20px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  transition: all 0.25s var(--ease);
+  cursor: default;
+}
+
+.svc-card:hover {
+  border-color: var(--skyblue);
+  box-shadow: 0 12px 40px var(--shadow);
+  transform: translateY(-4px);
+}
+
+.svc-icon {
+  font-size: 1.75rem;
+  line-height: 1;
+}
+
+.svc-title {
+  font-family: var(--ff-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.svc-desc {
+  font-size: 0.87rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.svc-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  flex: 1;
+}
+
+.svc-list li {
+  font-size: 0.85rem;
+  color: var(--ink2);
+  line-height: 1.55;
+  padding-left: 1.1rem;
+  position: relative;
+}
+
+.svc-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  top: 0.05em;
+  color: var(--skyblue);
+  font-size: 0.82rem;
+}
+
+.svc-how {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--border);
+  margin-top: auto;
+  font-size: 0.78rem;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+.svc-how-label {
+  font-size: 0.63rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--skyblue);
+  flex-shrink: 0;
+}
+
+.svc-extra .svc-how {
+  border-top: none;
+  padding-top: 0.5rem;
+  margin-top: 0.35rem;
+}
+
+/* ── Electrical ── */
+.svc-extra {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: 16px;
+  padding: 1.4rem 2rem;
+  margin-top: 1.25rem;
+  margin-bottom: 3.5rem;
+  transition: all 0.25s var(--ease);
+  cursor: default;
+}
+
+.svc-extra:hover {
+  border-color: var(--skyblue);
+  box-shadow: 0 6px 24px var(--shadow);
+}
+
+.svc-extra-icon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  background: var(--skyblue-l);
+  border: 1.5px solid var(--skyblue);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+.svc-extra-body {
+  flex: 1;
+}
+
+.svc-extra-title {
+  font-family: var(--ff-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+  margin-bottom: 0.3rem;
+}
+
+.svc-extra-desc {
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+/* ── Call-to-action bar ── */
+.svc-cta {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.svc-cta-text {
+  font-size: 1rem;
+  color: var(--ink2);
+  line-height: 1.65;
+}
+
+.svc-cta-text strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.svc-cta-btns {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
 /* ─── ACHIEVEMENTS ───────────────────────────────────────── */
 #achievements {
   background: var(--cream);
@@ -1374,6 +1567,22 @@ footer {
   .exp-item {
     grid-template-columns: 1fr;
     gap: 0.75rem;
+  }
+
+  .svc-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .svc-extra {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .svc-cta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
   }
 }
 
