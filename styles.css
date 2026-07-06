@@ -180,7 +180,7 @@ nav.scrolled {
   color: var(--ink);
 }
 
-.nav-hire {
+.nav-contact {
   background: var(--ink-surface) !important;
   color: var(--ink-surface-fg) !important;
   padding: 0.5rem 1.25rem;
@@ -192,7 +192,7 @@ nav.scrolled {
     transform 0.2s !important;
 }
 
-.nav-hire:hover {
+.nav-contact:hover {
   background: var(--skyblue) !important;
   color: #fff !important;
   transform: translateY(-1px);
@@ -1497,8 +1497,8 @@ footer {
     letter-spacing: -0.02em;
   }
 
-  /* Override "Hire Me" button for mobile menu */
-  .nav-links .nav-hire {
+  /* Override "Contact Me" button for mobile menu */
+  .nav-links .nav-contact {
     display: inline-block;
     margin-top: 1rem;
     padding: 1rem 2.5rem !important;
