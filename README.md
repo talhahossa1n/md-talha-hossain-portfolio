@@ -2,7 +2,7 @@
 
 A modern, fully responsive portfolio website showcasing web development projects, skills, and professional experience. Built with clean, semantic HTML, modern CSS with dark mode support, and vanilla JavaScript.
 
-**Live Demo:** [md-talha-hossain-portfolio](https://md-talha-hossain-portfolio.onrender.com)
+**Live Demo:** [mdtalhahossain.com](https://mdtalhahossain.onrender.com)
 
 ---
 
